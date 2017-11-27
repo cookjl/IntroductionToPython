@@ -2,15 +2,15 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Jack Cook.
 """
 ########################################################################
-# TODO: 1.
+# Done: 1.
 # On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# Done: 2.
 #
 #  You should have RUN the PREVIOUS module and READ its code.
 #  (Do so now if you have not already done so.)
@@ -28,3 +28,43 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #  Don't forget to COMMIT your work by using  VCS ~ Commit and Push.
 ########################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+
+blue_turtle=rg.SimpleTurtle()
+blue_turtle.pen = rg.Pen('blue', 3)
+blue_turtle.speed = 20
+red_turtle=rg.SimpleTurtle()
+red_turtle.pen = rg.Pen('red', 3)
+red_turtle.speed = 20
+red_turtle.pen_up()
+blue_turtle.pen_up()
+red_turtle.right(90)
+blue_turtle.right(90)
+red_turtle.forward(200)
+blue_turtle.forward(200)
+red_turtle.left(90)
+blue_turtle.left(90)
+red_turtle.left(90)
+red_turtle.forward(5)
+red_turtle.right(90)
+red_turtle.pen_down()
+blue_turtle.pen_down()
+bluecirclesize = 250
+redcirclesize = 245
+for i in range (25):
+    blue_turtle.draw_circle(bluecirclesize)
+    blue_turtle.pen_up()
+    blue_turtle.left(90)
+    blue_turtle.forward(10)
+    blue_turtle.right(90)
+    blue_turtle.pen_down()
+    bluecirclesize=bluecirclesize-10
+    red_turtle.draw_circle(redcirclesize)
+    red_turtle.pen_up()
+    red_turtle.pen_up()
+    red_turtle.left(90)
+    red_turtle.forward(10)
+    red_turtle.right(90)
+    red_turtle.pen_down()
+    redcirclesize=redcirclesize-10
