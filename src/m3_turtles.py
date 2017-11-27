@@ -69,7 +69,7 @@ dave.forward(200)
 # ----------------------------------------------------------------------
 matt = rg.SimpleTurtle('turtle')
 matt.pen = rg.Pen('red', 30)
-matt.speed = 10  # Faster
+matt.speed = 1  # Faster
 matt.backward(50)
 matt.left(90)
 matt.forward(50)
